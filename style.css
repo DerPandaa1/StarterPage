@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.bill {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.searchBar{
+    background-color: #1c1d1f;
+    width: 70%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #6A5B75;
+    font-size: large;
+    font-weight: bold;
+    color: #D0D0D0;
+}
+.searchBar:focus{
+    outline: none;
+    background-color: #2c2d2f;
+}
