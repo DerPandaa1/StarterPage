@@ -1,3 +1,21 @@
+html, body{
+    background-color: #282A2E;
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+
 .input {
     display: flex;
     flex-direction: column;
@@ -35,7 +53,7 @@
     margin: auto;
     background-color: #1c1d1f;
 }
-.text {
+.website-link {
     color: #D0D0D0;
     font-size: 25px;
 }
