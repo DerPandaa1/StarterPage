@@ -1,10 +1,9 @@
 {
     "websites":
     [
-        {"name": "Youtube", "url":"https://www.youtube.com"},
-        {"name": "Google", "url":"https://www.google.de/"},
-        {"name": "Github", "url":"https://github.com/"},
-        {"name": "Twitch", "url":"https://www.twitch.tv/"},
-        {"name": "Pornhub", "url":"https://de.pornhub.com/"}
+        {"name": "Youtube", "url":"https://www.youtube.com", "icon":"logos/youtube.svg"},
+        {"name": "Google", "url":"https://www.google.de/", "icon":"logos/google.svg"},
+        {"name": "Github", "url":"https://github.com/", "icon":"logos/github.svg"},
+        {"name": "Twitch", "url":"https://www.twitch.tv/", "icon":"logos/twitch.svg"}
     ]
 }

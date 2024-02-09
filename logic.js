@@ -25,8 +25,7 @@ $(document).ready(function(){
             
             for (let i = 0; i < Object.keys(websiteList).length; i++){
                 if(websiteList[i]["name"].toLowerCase().includes(val.toLowerCase())){
-                    console.log(websiteList[i]["url"]);
-                    let htmlCode = '<li><a class="website" href="'+websiteList[i]["url"]+'"><img src="logos/github.svg" class="logo"><p class="website-link"><strong>'+websiteList[i]["name"]+'</strong></p></a></li>';
+                    let htmlCode = '<li><a class="website" href="'+websiteList[i]["url"]+'"><img src="'+websiteList[i]["icon"]+'" class="logo"><p class="website-link"><strong>'+websiteList[i]["name"]+'</strong></p></a></li>';
                     $('.website-list').append(htmlCode);
                 }
             }
