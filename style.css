@@ -5,6 +5,9 @@ html, body{
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     font-weight: normal;
+}
+
+*{
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
@@ -38,6 +41,7 @@ a{
 .container-inner{
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .bill {
@@ -89,4 +93,92 @@ a{
 .website-link {
     color: #D0D0D0;
     font-size: 25px;
+}
+
+.create-entry-icon{
+    position: absolute;
+    top: 19px;
+    right:25px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.create-entry-icon::before {
+    content: " ";
+    display: block;
+    background-color: #00FF00;
+    width: 4px;
+    height: 20px;
+    position: relative;
+    left: 8px;
+}
+
+.create-entry-icon::after {
+    content: " ";
+    display: block;
+    background-color: #00FF00;
+    width: 20px;
+    height: 4px;
+    position: relative;
+    top: -12px;
+}
+
+
+
+.add-json-entry-outer{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #CCCCCC;
+    box-shadow: 0px 0px 10px #f4f4f4;
+}
+
+.add-json-entry-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.close-btn{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.close-btn::before {
+    content: " ";
+    display: block;
+    background-color: #FF0000;
+    width: 4px;
+    height: 30px;
+    position: relative;
+    top: -5px;
+    left: 18px;
+    transform: rotate(45deg);
+}
+
+.close-btn::after {
+    content: " ";
+    display: block;
+    background-color: #FF0000;
+    width: 30px;
+    height: 4px;
+    position: relative;
+    left: 5px;
+    top: -21px;
+    transform: rotate(45deg);
+}
+
+.add-json-entry-btn{
+    background-color: #00DD00;
+    border: 0;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }

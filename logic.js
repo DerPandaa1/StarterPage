@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
-    
+    $('.add-json-entry-outer').hide();
 
-    $( ".searchBar" ).on( "keyup", function() {
-
+    $( ".container .searchBar" ).on( "keyup", function() {
 
         if($(this).val() !== ""){
             $('.website-list li').remove();
@@ -36,4 +35,12 @@ $(document).ready(function(){
             $('.website-list li').remove();
         }
     } );
+
+    $('.create-entry-icon').on("click", function (){
+        $('.add-json-entry-outer').show();
+    });
+
+    $('.close-btn').on("click", function (){
+        $('.add-json-entry-outer').hide();
+    });
 });
