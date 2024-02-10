@@ -43,4 +43,28 @@ $(document).ready(function(){
     $('.close-btn').on("click", function (){
         $('.add-json-entry-outer').hide();
     });
+
+    $('.add-json-entry-btn').on("click", function(){
+        !async function(){
+            let data = await fetch("websites.json")
+                .then((response) => response.json())
+                .then(data => {
+                    return data;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        
+
+        //var jsonData = JSON.stringify(data.websites);
+        var jsonData = JSON.parse(JSON.stringify(data.websites));
+
+        var values = {"name": "Discord", "url":"https://discord.com/", "icon":"logos/youtube.svg"}
+
+        jsonData[4] = values;
+
+        console.log(jsonData);
+
+        }();
+    });
 });
