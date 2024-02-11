@@ -1,9 +1,1 @@
-{
-    "websites":
-    [
-        {"name": "Youtube", "url":"https://www.youtube.com", "icon":"logos/youtube.svg"},
-        {"name": "Google", "url":"https://www.google.de/", "icon":"logos/google.svg"},
-        {"name": "Github", "url":"https://github.com/", "icon":"logos/github.svg"},
-        {"name": "Twitch", "url":"https://www.twitch.tv/", "icon":"logos/twitch.svg"}
-    ]
-}
+{"websites":[{"name":"Youtube","url":"https://www.youtube.com","icon":"youtube.svg"},{"name":"Google","url":"https://www.google.de/","icon":"google.svg"},{"name":"Github","url":"https://github.com/","icon":"github.svg"},{"name":"Twitch","url":"https://www.twitch.tv/","icon":"twitch.svg"},{"name":"Twitter","url":"https://twitter.com/","icon":"youtube.svg"}]}
