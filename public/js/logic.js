@@ -42,6 +42,10 @@ $(document).ready(function(){
     });
 
     $('.add-json-entry-btn').on("click", function(){
+
+
+        //console.log('here');
+        
         
         var websiteName = $('#websiteName').val();
         var websiteURL = $('#websiteURL').val();
